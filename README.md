@@ -1,4 +1,3 @@
-![alt text](https://github.com/briangormanly/carzy/blob/main/client/carzy/public/assets/img/logos/Carzy-Logo-1-wText-1080.png?raw=true)
 ## To create ...
 
 
