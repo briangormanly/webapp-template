@@ -1,7 +1,7 @@
 ## To create ...
 
 
-Carzy is 
+webapp-template is 
 
 ## Installation  
 
@@ -12,13 +12,13 @@ Carzy is
 
 ## Database setup
 * You can either run /server/db/CreateTablesScript-base-example.sql or create a copy and modify / comment out default data to your liking
->  psql -U postgres -f server/db/createTablesScript-base-example.sql (from the root directory of the project, default carzy password is 'carzy')
-* Run the script to create the database.  If you run the script with postgres / root user it will create a database and user named 'carzy', then connect to the new database and create the schema using the carzy user.
+>  psql -U postgres -f server/db/createTablesScript-base-example.sql (from the root directory of the project, default webapp-template password is 'webapp-template')
+* Run the script to create the database.  If you run the script with postgres / root user it will create a database and user named 'webapp-template', then connect to the new database and create the schema using the webapp-template user.
 
 ### Quick start setup
 1. After installing and configuring Node.js and Postgres clone this git repo
-> git clone https://github.com/briangormanly/carzy.git
-> cd carzy
+> git clone https://github.com/briangormanly/webapp-template.git
+> cd webapp-template
 2. *Make a copy of the .env.example file called .env in the project home directory* 
 3. In the .env file: 
     1. Note the FRONT_END_NAME in the future you can change this to use your own front end / Theme 
@@ -37,7 +37,7 @@ Carzy is
 
 ----- output ------
 >
-> Carzy running... {localhost:1986}
+> webapp-template running... {localhost:1986}
 7. Navigate your web browser to http://localhost:PORT (default port is 1986) if you are running on your local machine.
 8. Nice!
 

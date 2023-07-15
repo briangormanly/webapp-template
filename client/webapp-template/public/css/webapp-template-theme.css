@@ -1,12 +1,12 @@
 @charset "UTF-8";
 /*
 
-Carzy - Custom CSS
+webapp-template - Custom CSS
 Modify this CSS file to create your own look and feel for your front end.
 
 old Masthead background: #414d53
 old green: #d9e8c8
-Carzy colors:
+webapp-template colors:
 Primary: #F39845
 Primary (light): #FFC895
 Primary (medium light): #FFB26A
@@ -117,7 +117,7 @@ Tetradic: #414d53, #4d4153, #535041
 .tetradic3 {
     color: #535041;
 }
-.carzyColor {
+.webapp-templateColor {
     color: #f39945;
 }
 
@@ -125,11 +125,11 @@ Tetradic: #414d53, #4d4153, #535041
     color: #d9534f;
 }
 
-.carzy-text-dark {
+.webapp-template-text-dark {
     color: #414d53;
 }
 
-.carzy-text-light {
+.webapp-template-text-light {
     color: #a9c6d4;
 }
 
@@ -143,37 +143,37 @@ Tetradic: #414d53, #4d4153, #535041
 
 /* fonts */
 
-.carzy-font {
+.webapp-template-font {
     font-family: 'Luxurious Roman', cursive !important;
     color: #171717;
 }
-.carzy-font-light {
+.webapp-template-font-light {
     font-family: 'Luxurious Roman', cursive !important;
     color: #F6F6F6;
 }
-.carzy-font-1em {
+.webapp-template-font-1em {
     font-family: 'Luxurious Roman', cursive !important;
     font-size:1em !important
 }
-.carzy-font-1p5em {
+.webapp-template-font-1p5em {
     font-family: 'Luxurious Roman', cursive !important;
     font-size:1.5em !important
 }
-.carzy-font-2em {
+.webapp-template-font-2em {
     font-family: 'Luxurious Roman', cursive !important;
     font-size:2em !important
 }
-.carzy-font-3em {
+.webapp-template-font-3em {
     font-family: 'Luxurious Roman', cursive !important;
     font-size:3em !important
 }
   
-.carzy-font-large {
+.webapp-template-font-large {
     font-family: 'Luxurious Roman', cursive !important;
     font-size:4em !important
 }
 @media (min-width: 992px) {
-    .carzy-font-large {
+    .webapp-template-font-large {
       font-family: 'Luxurious Roman', cursive !important;
       font-size:5em !important
     }

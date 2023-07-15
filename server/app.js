@@ -1,5 +1,5 @@
 /**
- * Carzy - The Car Enthusiast's Companion
+ * webapp-template - Your webapp
  * © 2023 Brian Gormanly
  * BSD 3-Clause License
  * see included LICENSE or https://opensource.org/licenses/BSD-3-Clause
@@ -65,7 +65,7 @@ const swaggerJsDoc = require( "swagger-jsdoc" );
 
 // global swagger info (TODO: maybe this should be moved into another file if it is staying?)
 const YAML = require( "yamljs" );
-const swaggerApiDoc = YAML.load( "./server/carzyApi.yaml" );
+const swaggerApiDoc = YAML.load( "./server/apiDoc.yaml" );
 
 // initialize swagger
 //const swaggerDocInit = swaggerJsDoc( swaggerGlobal );
@@ -167,7 +167,7 @@ app.use( ( error, req, res, next ) => {
 
 app.listen( PORT, () =>
     console.log(
-        "Carzy running... {" +
+        "webapp-template running... {" +
       process.env.SITE_PROTOCOL +
       process.env.SITE_HOST +
       ":" +

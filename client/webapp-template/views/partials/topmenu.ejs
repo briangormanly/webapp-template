@@ -1,9 +1,9 @@
 <div class="container navbar-interior main-content">
     <span>
         <a class="navbar-brand js-scroll-trigger" href="/">
-            <!-- <img class="d-none d-md-block" src="/assets/img/logos/carzy-logo-2023-800.png?text=big+logo" style="height:65px" />
-            <img class="d-md-none" src="/assets/img/logos/carzy-logo-2023-1.png?text=small+logo" style="height:65px" /> -->
-            <img src="/assets/img/logos/Carzy-Logo-1-wText-400.png?text=big+logo" style="height:65px" />
+            <!-- <img class="d-none d-md-block" src="/assets/img/logos/webapp-template-logo-2023-800.png?text=big+logo" style="height:65px" />
+            <img class="d-md-none" src="/assets/img/logos/webapp-template-logo-2023-1.png?text=small+logo" style="height:65px" /> -->
+            <img src="/assets/img/logos/webapp-template-Logo-1-wText-400.png?text=big+logo" style="height:65px" />
         </a>
     </span>
     
@@ -14,7 +14,7 @@
         <i class="fas fa-bars"></i>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive" style="padding-left: 3%;">
-        <ul class="nav navbar-nav ml-auto carzy-font" style="display:flex;">
+        <ul class="nav navbar-nav ml-auto webapp-template-font" style="display:flex;">
 
             <% if(!locals.authUser) { %>
                 <li class="nav-item mx-0 mx-lg-1">
@@ -26,12 +26,12 @@
                     href="/community">COMMUNITY</a></li> -->
             <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                     href="/dashboard">DASHBOARD</a></li>
-            <% if( process.env.CARZY_PRODUCT_PAGE=='true' ) { %>
+            <% if( process.env.PRODUCT_PAGE=='true' ) { %>
                 <li class="nav-item mx-0 mx-lg-1">
                     <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="/codebot">Products</a>
                 </li>
             <% } %>
-            <% if( process.env.CARZY_ABOUT_PAGE=='true' ) { %>
+            <% if( process.env.ABOUT_PAGE=='true' ) { %>
                 <li class="nav-item mx-0 mx-lg-1">
                     <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="/about">ABOUT</a>
                 </li>

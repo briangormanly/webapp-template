@@ -1,12 +1,12 @@
 /**
- * Carzy - The Car Enthusiast's Companion
+ * webapp-template - Your webapp
  * © 2023 Brian Gormanly
  *
  */
 
 
 /**
- * Wrapper for Carzy API responses. Payload contains data to be transported, message and error provide unified 
+ * Wrapper for webapp-template API responses. Payload contains data to be transported, message and error provide unified 
  * mechanism for communnication with UI or API client.
  */
 class ApiMessage{
@@ -27,7 +27,7 @@ class ApiMessage{
  * @param {number} statusCode 
  * @param {string} messageTitle 
  * @param {string} messageBody 
- * @returns Carzy's API Error response
+ * @returns webapp-template's API Error response
  */
 exports.createApiMessage = ( statusCode, messageTitle, messageBody ) => {
     return new ApiMessage( statusCode, messageTitle, messageBody );

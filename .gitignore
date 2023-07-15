@@ -76,14 +76,11 @@ web_modules/
 .env.test
 
 # custom database scripts
-server/db/createTablesScript.sql
-server/db/codingcoach.sql
-server/db/codingcoach-v.2.sql
 
 # images NEEDS TO BE REDONE when theming directories are set
 #client/public/assets/img/
-# client/public/carzy/assets/mail/
-# client/public/carzy/assets/topics/
+# client/public/assets/mail/
+# client/public/webapp-template/assets/topics/
 
 # client/public/codingcoach/assets/mail/
 # client/public/codingcoach/assets/topics/

@@ -1,5 +1,5 @@
 /**
- * Carzy - The Car Enthusiast's Companion
+ * webapp-template - Your webapp
  * © 2023 Brian Gormanly
  *
  */
