@@ -103,49 +103,7 @@
     
 
     
-                                <!-- <div class="divider-custom">
-                                    <div class="divider-custom-line divider-bg-color"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-chalkboard-teacher divider-color"></i></div>
-                                    <div class="divider-custom-line divider-bg-color"></div>
-                                </div> -->
-    
-                                <!-- TODO:Sharing revisit if this space should be reused for sharing when completed -->
-                                <!-- <h2>Membership</h2>
-    
-                                <% 
-                                if(products && products.length > 0) {
-                                    let memberships = products.filter(product => product.productType === 'membership');
-                                    memberships.forEach(membership => {
-                                        
-                                        let tempStatus = membership.status;
-                                        if(membership.status === 'complete') {
-                                            tempStatus = 'Valid'
-                                        }
-                                    
-                                        %>
-                                        <div class="card" style="width: 100%;">
-                                            <img class="product-img-overlay" src="<%- membership.productStaticImage %>" alt="Card image cap">
-                                            <div class="card-body product-card-text-raised">
-                                                <h5 class="card-title"><%- membership.productName %></h5>
-                                                <p class="card-text"><%- membership.productDescription1 %></p>
-                                                <p class="card-text">Status: <%- tempStatus %></p>
-                                            </div>
-                                        </div> 
-                                        <%
-                                    })
-                                }
-                                else {
-                                    %> 
-                                    <div class="card" style="width: 100%;">
-                                        
-                                        <div class="card-body product-card-text-raised">
-                                            <h5 class="card-title">No Membership currently</h5>
-                                            <p><a href="/community/purchase">Learn more about membership</a></p>
-                                        </div>
-                                    </div> 
-                                    <%
-                                }
-                                %> -->
+                               
                                 
                                 <div class="divider-custom">
                                     <div class="divider-custom-line divider-bg-color"></div>
@@ -153,51 +111,6 @@
                                     <div class="divider-custom-line divider-bg-color"></div>
                                 </div>
     
-                                <%
-                                if( process.env.PRODUCT_PAGE == 'true' ) {
-                                %>
-                                    <h2>Products</h2>
-                                    
-                                    
-                                    <% 
-    
-                                    if(products && products.length > 0) {
-                                        let nonMemberships = products.filter(product => product.productType === 'product');
-                                        nonMemberships.forEach(product => {
-                                            
-                                            let tempStatus = product.status;
-                                            if(product.status === 'complete') {
-                                                tempStatus = 'Paid - Awaiting Shipping'
-                                            }
-                                            
-                                            %>
-                                            <div class="card" style="width: 100%;">
-                                                <img class="product-img-overlay" src="<%- product.productStaticImage %>" alt="Card image cap">
-                                                <div class="card-body product-card-text-raised">
-                                                    <h5 class="card-title"><%- product.productName %></h5>
-                                                    <p class="card-text"><%- product.productDescription1 %></p>
-                                                    <p class="card-text">Status: <%- tempStatus %></p>
-                                                </div>
-                                            </div> 
-                                            <%
-                                        })
-                                    }
-                                    else {
-                                        %> 
-                                        <div class="card" style="width: 100%;">
-                                            
-                                            <div class="card-body product-card-text-raised">
-                                                <h5 class="card-title">You have no purchases so far,</h5>
-                                                <p>Check out the <a href="/codebot">Code Bot 3π+</a></p>
-                                            </div>
-                                        </div> 
-                                        <%
-                                    }
-                                    %>
-    
-                                <%
-                                }
-                                %>
                             </div>
                         </div>
                     </div>

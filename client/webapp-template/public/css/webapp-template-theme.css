@@ -61,28 +61,31 @@ Tetradic: #414d53, #4d4153, #535041
 
 */
 
+/**
+These are the colors used in the webapp-template.  You can modify these colors to give your site a unique color scheme.
+*/
 .bg-primary {
-    background-color: #AE590B !important;
+    background-color: #587792 !important;
     height: 100%
 }
 
 .bg-secondary {
-    background-color: #107D8C !important;
+    background-color: #928a58 !important;
     height: 100%
 }
 
 .bg-tertiary {
-    background-color: #AE7A0B !important;
+    background-color: #925868 !important;
     height: 100%
 }
 
 
 /* colors */
 .primary {
-    color: #F39845;
+    color: #587792;
 }
 .complementary {
-    color: #2C8895;
+    color: #926d58;
 }
 .complementary-light {
     color: #78C0CA;
@@ -144,48 +147,47 @@ Tetradic: #414d53, #4d4153, #535041
 /* fonts */
 
 .webapp-template-font {
-    font-family: 'Luxurious Roman', cursive !important;
-    color: #171717;
+    font-family: 'Monaco' !important;
 }
 .webapp-template-font-light {
-    font-family: 'Luxurious Roman', cursive !important;
+    font-family: 'Monaco' !important;
     color: #F6F6F6;
 }
 .webapp-template-font-1em {
-    font-family: 'Luxurious Roman', cursive !important;
+    font-family: 'Monaco' !important;
     font-size:1em !important
 }
 .webapp-template-font-1p5em {
-    font-family: 'Luxurious Roman', cursive !important;
+    font-family: 'Monaco' !important;
     font-size:1.5em !important
 }
 .webapp-template-font-2em {
-    font-family: 'Luxurious Roman', cursive !important;
+    font-family: 'Monaco' !important;
     font-size:2em !important
 }
 .webapp-template-font-3em {
-    font-family: 'Luxurious Roman', cursive !important;
+    font-family: 'Monaco' !important;
     font-size:3em !important
 }
   
 .webapp-template-font-large {
-    font-family: 'Luxurious Roman', cursive !important;
+    font-family: 'Monaco' !important;
     font-size:4em !important
 }
 @media (min-width: 992px) {
     .webapp-template-font-large {
-      font-family: 'Luxurious Roman', cursive !important;
+      font-family: 'Monaco' !important;
       font-size:5em !important
     }
 }
 
 /* text conrols */
 .text-primary {
-    color: #AE7A0B !important;
+    color: #587792 !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
-    color: #085F6B !important;
+    color: #926d58 !important;
 }
 
 .text-secondary {

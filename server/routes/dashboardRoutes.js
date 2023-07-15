@@ -7,9 +7,6 @@
 var express = require( 'express' );
 var router = express.Router( );
 
-// dependencies
-const fs = require( 'fs' );
-let path = require( 'path' );
 
 // setup json body parser
 const bodyParser = require( 'body-parser' );
@@ -18,22 +15,10 @@ router.use( bodyParser.urlencoded( {
 } ) );
 router.use( bodyParser.json() );
 
-// set up file paths for user profile images
-const UPLOAD_PATH_BASE = path.resolve( __dirname, '..', '../client' );
-const FRONT_END = process.env.FRONT_END_NAME;
-const WORKSPACE_PATH = process.env.WORKSPACE_IMAGE_PATH;
-const RESOURCE_PATH = process.env.RESOURCE_IMAGE_PATH;
 
-// setup fileupload (works with enctype="multipart/form-data" encoding in request)
-const fileUpload = require( "express-fileupload" );
-router.use(
-    fileUpload()
-);
 
 // controllers
 const dashboardController = require( '../controller/dashboardController' );
-const workspaceController = require( '../controller/apis/workspaceController' );
-const resourceController = require( '../controller/apis/resourceController' );
 
 
 /**
@@ -62,34 +47,6 @@ router.route( '/' )
     }
     );
 
-/** 
- * Form enctype="multipart/form-data" route using express-fileupload for file upload
- * 
- */
-router.route( '/workspace' )
-    .post( async ( req, res ) => {
-
-        // save the workspace
-        await workspaceController.saveWorkspace( req, res, true );
-        
-        res.redirect( 303, '/dashboard' );
-    }
-    );
-
-
-/** 
- * Form enctype="multipart/form-data" route using express-fileupload for file upload
- * 
- */
-router.route( '/resource' )
-    .post( async ( req, res ) => {
-        
-        // save the resource
-        await resourceController.saveResource( req, res, true );
-
-        res.redirect( 303, '/dashboard' );
-    }
-    );
 
 
 

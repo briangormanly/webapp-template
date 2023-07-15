@@ -141,6 +141,12 @@ app.use( "/user", userRoutes );
 const profileRoutes = require( "./routes/profileRoutes" );
 app.use( "/profile", profileRoutes );
 
+/**
+ * User Dashboard routes
+ */
+const dashboardRoutes = require( "./routes/dashboardRoutes" );
+app.use( "/dashboard", dashboardRoutes );
+
 
 /**
  * API Routes
